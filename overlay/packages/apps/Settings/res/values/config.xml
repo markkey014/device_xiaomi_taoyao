@@ -16,26 +16,8 @@
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
 
-    <!-- Whether to show Minimum and Maximum refresh rate in display settings -->
-    <bool name="config_show_refresh_rate_controls">true</bool>
-    <bool name="config_supports_dynamic_refresh_rate_controls">true</bool>
-
     <!-- Whether to show a preference item for regulatory information in About phone -->
     <bool name="config_show_regulatory_info">true</bool>
-
-    <!-- Whether to show the Preference for Touch Sensitivity -->
-    <bool name="config_show_touch_sensitivity">true</bool>
-
-    <!-- The radius of the enrollment progress bar, in dp -->
-
-    <!-- Whether or not the device is capable of multiple levels of vibration intensity.
-         Note that this is different from whether it can control the vibration amplitude as some
-         devices will be able to vary their amplitude but do not possess enough dynamic range to
-         have distinct intensity levels -->
-    <bool name="config_vibration_supports_multiple_intensities">true</bool>
-
-    <!-- Whether to show a preference item for mobile plan -->
-    <bool name="config_show_mobile_plan">false</bool>
 
     <!-- The number of vibration intensity levels supported by the device.
          Note that this should correspond to the ability to vary the vibration amplitude, with
@@ -52,12 +34,11 @@
          should be either LOW (1) or HIGH (3).
     -->
     <integer name="config_vibration_supported_intensity_levels">3</integer>
+	
+	  <!-- If the Storage Manager settings are enabled. -->
+	<bool name="config_storage_manager_settings_enabled">true</bool>
+	
+	<!-- Whether to show the Preference for Adaptive connectivity -->
+    <bool name="config_show_adaptive_connectivity">true</bool>
 
-        <!-- Battery health -->
-    <string name="config_batteryRemainingCapacityNode">/sys/class/power_supply/battery/charge_full</string>
-    <string name="config_batteryDesignCapacityNode">/sys/class/power_supply/battery/charge_full_design</string>
-    <string name="config_batteryChargeCycles">/sys/class/power_supply/battery/cycle_count</string>
-
-    <!-- Whether to enable Lineage Fast Charge Preference -->
-    <bool name="config_lineageFastChargeSupported">true</bool>
 </resources>
